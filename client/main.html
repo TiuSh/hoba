@@ -1,0 +1,40 @@
+<head>
+  <title>Hoba</title>
+  <script type="text/javascript">
+    WebFontConfig = {
+      google: {
+        families: [
+          'Roboto:400,300,500:latin',
+        ]
+      }
+    };
+
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId: '181022985619894',
+        xfbml: false,
+        version: 'v2.5',
+      });
+    };
+
+    (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+</head>
+<body>
+  <div id="react-root"></div>
+</body>

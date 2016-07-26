@@ -1,0 +1,13 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "meteor",
+    "react"
+  ],
+  "extends": [
+    "airbnb/base",
+    "plugin:meteor/guide",
+    "plugin:react/recommended"
+  ],
+  "rules": {}
+}
